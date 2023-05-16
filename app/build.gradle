@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply plugin: 'io.qameta.allure'
+
 
 android {
     signingConfigs {}
@@ -105,6 +107,10 @@ dependencies {
 
     // Backtrace SDK
     implementation 'com.github.backtrace-labs.backtrace-android:backtrace-library:3.7.0'
+}
+
+allure {
+    value = "2.8.0"
 }
 
 apply plugin: 'com.google.gms.google-services'
